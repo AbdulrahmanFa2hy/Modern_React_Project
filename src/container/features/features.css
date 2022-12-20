@@ -1,0 +1,128 @@
+.features {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  font-family: var(--font-family);
+}
+
+.features__heading {
+  flex: 1;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.features__heading-title {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+}
+
+.features__heading p {
+  margin: 2rem 0;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+
+.features__content {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.features__content > div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2.7rem;
+}
+
+.features__content .section__header h3 {
+  font-size: 18px;
+  line-height: 24px;
+  flex: 1;
+  max-width: 200px;
+  min-width: 165px;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+
+.features__content p {
+  flex: 2;
+  max-width: 465px;
+  min-width: 310px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1050px) {
+  .features {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .features__heading {
+    flex: 1;
+    align-items: center;
+  }
+  .features__heading-title {
+    max-width: 650px;
+  }
+  .features__content {
+    margin-top: 4rem;
+  }
+
+  .features__content div {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .features__content div {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .features__heading-title {
+    font-size: 28px;
+  }
+  .features__content .section__header {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .features {
+    margin: 0;
+    padding: 0;
+  }
+  .features__heading {
+    margin: 0;
+  }
+  .features__heading p {
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+  .features__content div {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .features__heading-title {
+    font-size: 26px;
+    line-height: 35px;
+    min-width: 200px;
+  }
+  .features__content .section__header {
+    margin-bottom: 1rem;
+  }
+  .features__content p {
+    min-width: 200px;
+    width: 100%;
+    flex: 2;
+    text-align: left;
+  }
+}
