@@ -136,7 +136,7 @@
 
 @media screen and (max-width: 490px) {
   .header__container {
-    padding: 2rem;
+    padding: .5rem;
   }
   .header__container-title {
     font-size: 34px;

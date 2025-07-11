@@ -8,7 +8,7 @@
 .wgpt3__container {
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 2rem;
   width: 85%;
   background: -moz-radial-gradient(
     circle at 40% 49%,
@@ -145,8 +145,11 @@
 }
 
 @media screen and (max-width: 490px) {
+
   .wgpt3__container {
-    padding: 1rem;
+    padding: .5rem;
+    width: 94%;
+    border-radius: 5px;
   }
   .section__header h3 {
     font-size: 20px;
